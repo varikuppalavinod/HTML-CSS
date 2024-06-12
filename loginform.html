@@ -1,89 +1,75 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
     <title>Document</title>
-    
-        <style>
-            *{
-                padding:0;
-                margin:0;
-                box-sizing:border-box;
-            }
 
-            body{
-                background-color:rgb(150, 79, 216);
-                display:flex;
-                justify-content:center;
-                align-items:center;
+    <style>
+      .container{
+        display:grid;
+        grid-template-areas:
+        "img1 img1 img2"
+        "img1 img1 img3"
+        "img4 img5 img6";
+        width:60%;
+        border:2px solid rgb(0, 255, 123);
         
-            }
-            .user{
-            color:rgb(47, 0, 255);
-        }
-        form{
-            width:300px;
-            height:350px;
-            align-items:center;
-            display:flex;
-            flex-direction:column;
-            padding:30px;
-            background-color:white;
-            position:relative;
-            top:100px;
-            gap:20px;
-
-        }
-        .field{
-            display:flex;
-            flex-direction:column;
-            width:100%;
-
-        }
-        .field input{
-            width:100%;
-            border:2px solid gray;
-            border-radius:3px;
-            padding:10px;
-        }
-        input:focus{
-            border-color:rgb(147, 89, 202);
-        }
-        button{
-            width:80px;
-            background-color:rgb(176, 108, 240);
-            color:white;
-            border-radius:5px;
-            padding:5px;
-            cursor:pointer;
-            opacity:0.8;
-    
-        }
-        button:hover{
-            opacity:1;
-        }
-
-        </style>
-    
+       
+      }
+      .i1{
+        grid-area:img1;
+        background-color:rgb(184, 175, 160);
+        padding:50px;
+        margin:0px 0px;
+        border:2px solid rgb(0, 255, 123);
+      }
+      .i2{
+        grid-area:img2;
+        background-color:aqua;
+        padding:50px;
+        margin:0px 0px;
+        border:2px solid rgb(0, 255, 123);
+      }
+      .i3{
+        grid-area:img3;
+        background-color:rgb(47, 182, 126);
+        padding:50px;
+        margin:0px 0px;
+        border:2px solid rgb(0, 255, 123);
+      }
+      .i4{
+        grid-area:img4;
+       
+        background-color:blue;
+        padding:50px;
+        margin:0px 0px;
+        border:2px solid rgb(0, 255, 123);
+      }
+      .i5{
+        grid-area:img5;
+        background-color:blueviolet;
+        padding:50px;
+        margin:0px 0px;
+        border:2px solid rgb(0, 255, 123);
+      }
+      .i6{
+        grid-area:img6;
+        background-color:brown;
+        padding:50px;
+         margin:0px 0px;
+         border:2px solid rgb(0, 255, 123);
+      }
+    </style>
 </head>
 <body>
-    <form>
-      <div>
-        <span class="material-symbols-outlined user">person </span>
-      </div>
-        <div class="field">
-            <label>Email</label>
-            <input type="email"placeholder="enter email">
-        </div>
-        <div class="field">
-            <label>Password</label>
-            <input typr="password" placeholder="enter password">
-        </div>
-        <button>Login</button>
-    </form>
+    <div class="container">
+    <p class="i1">vinod</p>
+    <p class="i2">ravi</p>
+    <p class="i3">anil</p>
+    <p class="i4">ajay</p>
+    <p class="i5">vijay</p>
+    <p class="i6">varun</p>
+</div>
 </body>
 </html>
-
